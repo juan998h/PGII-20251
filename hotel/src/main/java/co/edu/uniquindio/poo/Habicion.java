@@ -31,6 +31,6 @@ public class Habitacion {
     public void setTipo(TipoHabitacion tipo) {
         this.tipo = tipo;
     }
-
+uudidifdsisfdiisfdifsdidsfidsfidsidsisfdisfdsfdjbdsfbdsfbdsfuwfufufuidafauid
 
 }
