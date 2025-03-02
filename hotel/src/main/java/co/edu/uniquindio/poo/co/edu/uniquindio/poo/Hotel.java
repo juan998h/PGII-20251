@@ -50,4 +50,3 @@ public class Hotel {
     public List<Reserva> getReservas() {
         return reservas;
     }
-}
