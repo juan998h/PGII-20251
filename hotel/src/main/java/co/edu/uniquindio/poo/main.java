@@ -5,7 +5,7 @@ public class Main {
         Cliente cliente1 = new Cliente("Juan Pérez", "12345678A");
         hotel.registrarCliente(cliente1);
 
-        Habitacion habitacion1 = new Habitacion(101, "Doble", 100.0);
+        Habitacion habitacion1 = new Habitacion(101, DOBLE, 100.0);
         hotel.agregarHabitacion(habitacion1);
 
         hotel.realizarReserva(cliente1, habitacion1, "2025-03-10", "2025-03-15");
@@ -14,4 +14,5 @@ public class Main {
         System.out.println("Reservas registradas: " + hotel.getReservas().size());
     }
 }
+
 
