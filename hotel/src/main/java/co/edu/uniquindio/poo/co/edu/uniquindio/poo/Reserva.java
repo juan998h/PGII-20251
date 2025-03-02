@@ -32,4 +32,3 @@ public class Reserva {
                 ", fechaSalida=" + fechaSalida +
                 '}';
     }
-}
