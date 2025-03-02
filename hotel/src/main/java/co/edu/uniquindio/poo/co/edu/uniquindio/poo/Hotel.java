@@ -2,6 +2,7 @@ package co.edu.uniquindio.poo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.time.LocalDate;
 
 public class Hotel {
     private static Hotel instancia;  // Instancia única
@@ -9,15 +10,15 @@ public class Hotel {
     private List<Cliente> clientes;
     private List<Reserva> reservas;
 
-    private HotelManager() {  // Constructor privado
+    private Hotel() {  // Constructor privado
         habitaciones = new ArrayList<>();
         clientes = new ArrayList<>();
         reservas = new ArrayList<>();
     }
 
-    public static HotelManager getInstancia() {
+    public static Hotel getInstancia() {
         if (instancia == null) {
-            instancia = new HotelManager();
+            instancia = new Hotel();
         }
         return instancia;
     }
@@ -30,12 +31,13 @@ public class Hotel {
         clientes.add(cliente);
     }
 
-    public void realizarReserva(Cliente cliente, Habitacion habitacion, String fechaEntrada, String fechaSalida) {
+    public void realizarReserva(Cliente cliente, Habitacion habitacion, LocalDate fechaEntrada, LocalDate fechaSalida) {
         Reserva reserva = new Reserva(cliente, habitacion, fechaEntrada, fechaSalida);
         reservas.add(reserva);
         cliente.agregarReserva(reserva);
         System.out.println("Reserva realizada para " + cliente.getNombre());
     }
+
 
     public List<Habitacion> getHabitaciones() {
         return habitaciones;
