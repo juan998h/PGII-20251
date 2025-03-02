@@ -1,5 +1,7 @@
+package co.edu.uniquindio.poo;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class Cliente {
     private String nombre;
@@ -16,5 +18,14 @@ public class Cliente {
         reservas.add(reserva);
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public List<Reserva> getReservas() { return reservas; }
 }
+

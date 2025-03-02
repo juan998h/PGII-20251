@@ -1,3 +1,5 @@
+package co.edu.uniquindio.poo;
+
 public abstract class Servicio implements Consumible {
     protected String nombre;
     protected double precio;
